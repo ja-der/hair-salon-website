@@ -235,7 +235,6 @@ export function Booking() {
                                             ))}
                                             {Array.from({ length: daysInMonth }).map((_, index) => {
                                                 const day = index + 1;
-                                                const date = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), day);
                                                 const isSelected = selectedDate?.getDate() === day &&
                                                     selectedDate?.getMonth() === currentMonth.getMonth() &&
                                                     selectedDate?.getFullYear() === currentMonth.getFullYear();
